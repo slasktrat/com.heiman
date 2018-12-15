@@ -1,0 +1,6 @@
+[submodule "node_modules/homey-zwavedriver"]
+	path = node_modules/homey-zwavedriver
+	url = https://github.com/aartse/node-homey-zwavedriver
+[submodule "node_modules/tinycolor2"]
+	path = node_modules/tinycolor2
+	url = https://github.com/bgrins/TinyColor.git

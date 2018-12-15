@@ -1,0 +1,57 @@
+{
+  "id": "com.heiman",
+  "version": "1.0.0",
+  "compatibility": ">=1.5.0",
+  "author": {
+    "name": "Espen Ljosland",
+    "email": "espen@ljosland.com"
+  },
+  "sdk": 2,
+  "name": {
+    "en": "Heiman"
+  },
+  "description": {
+    "en": "Adds support for Heiman Smoke Sensor"
+  },
+  "category": [
+    "security"
+  ],
+  "permissions": [],
+  "images": {
+    "large": "/assets/images/large.png",
+    "small": "/assets/images/small.png"
+  },
+  "drivers": [
+    {
+      "id": "HS1SA-Z",
+      "name": {
+        "en": "Smoke Sensor",
+        "nl": "Rookmelder"
+      },
+      "zwave": {
+        "manufacturerId": 608,
+        "productTypeId": 32770,
+        "productId": [
+          4096
+        ],
+        "learnmode": {
+          "instruction": {
+            "en": "Press the reset button three times within 1.5 seconds. The led flashed green."
+          }
+        },
+        "associationGroups": [
+          1
+        ]
+      },
+      "class": "sensor",
+      "capabilities": [
+        "alarm_smoke",
+        "measure_battery"
+      ],
+      "images": {
+        "large": "/drivers/HS1SA-Z/assets/images/large.png",
+        "small": "/drivers/HS1SA-Z/assets/images/small.png"
+      }
+    }
+  ]
+}
