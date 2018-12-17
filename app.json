@@ -1,6 +1,6 @@
 {
   "id": "com.heiman",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "compatibility": ">=1.5.0",
   "author": {
     "name": "Espen Ljosland",
@@ -11,10 +11,11 @@
     "en": "Heiman"
   },
   "description": {
-    "en": "Adds support for Heiman Smoke Sensor"
+    "en": "Adds support for Heiman Smart Home products"
   },
   "category": [
-    "security"
+    "security",
+    "appliances"
   ],
   "permissions": [],
   "images": {
@@ -23,9 +24,39 @@
   },
   "drivers": [
     {
+      "id": "HS1CA-Z",
+      "name": {
+        "en": "Smart Carbon Monoxide Sensor"
+      },
+      "zwave": {
+        "manufacturerId": 608,
+        "productTypeId": 32773,
+        "productId": [
+          4096
+        ],
+        "learnmode": {
+          "instruction": {
+            "en": "Press the reset button three times within 1.5 seconds. The led flashes green."
+          }
+        },
+        "associationGroups": [
+          1
+        ]
+      },
+      "class": "sensor",
+      "capabilities": [
+        "alarm_co",
+        "measure_battery"
+      ],
+      "images": {
+        "large": "/drivers/HS1CA-Z/assets/images/large.png",
+        "small": "/drivers/HS1CA-Z/assets/images/small.png"
+      }
+    },
+    {
       "id": "HS1SA-Z",
       "name": {
-        "en": "Smoke Sensor",
+        "en": "Smart Smoke Sensor",
         "nl": "Rookmelder"
       },
       "zwave": {
@@ -36,7 +67,7 @@
         ],
         "learnmode": {
           "instruction": {
-            "en": "Press the reset button three times within 1.5 seconds. The led flashed green."
+            "en": "Press the reset button three times within 1.5 seconds. The led flashes green."
           }
         },
         "associationGroups": [
@@ -51,6 +82,37 @@
       "images": {
         "large": "/drivers/HS1SA-Z/assets/images/large.png",
         "small": "/drivers/HS1SA-Z/assets/images/small.png"
+      }
+    },
+    {
+      "id": "HS1HT-Z",
+      "name": {
+        "en": "Smart Temperature and Humidity Sensor"
+      },
+      "zwave": {
+        "manufacturerId": 608,
+        "productTypeId": 32775,
+        "productId": [
+          4096
+        ],
+        "learnmode": {
+          "instruction": {
+            "en": "Press the reset button three times within 1.5 seconds. The led flashes green."
+          }
+        },
+        "associationGroups": [
+          1
+        ]
+      },
+      "class": "sensor",
+      "capabilities": [
+        "measure_humidity",
+        "measure_temperature",
+        "measure_battery"
+      ],
+      "images": {
+        "large": "/drivers/HS1HT-Z/assets/images/large.png",
+        "small": "/drivers/HS1HT-Z/assets/images/small.png"
       }
     }
   ]
