@@ -1,0 +1,34 @@
+{
+	"id": "HS2WD-Z",
+	"name": {
+		"en": "Smart Sound and Flash Siren"
+	},
+	"zwave": {
+		"manufacturerId": 608,
+		"productTypeId": 32777,
+		"productId": [
+      4096
+    ],
+		"productDocumentation": "https://products.z-wavealliance.org/ProductManual/File?folder=&filename=Manuals/2951/SmartSirenDocumentation.pdf",
+		"pid": 2951,
+		"imageRemotePath": "https://products.z-wavealliance.org/ProductImages/Index?productName=ZC10-18066158",
+		"learnmode": {
+			"image": "{{driverAssetsPath}}/learnmode.svg",
+			"instruction": {
+				"en": "Press the Switch Button 3 times within 1.5s, Green LED is Blinking 3 times within 1 second.\nIf add Process is successful, Green LED will turn off."
+			}
+		},
+		"associationGroups": [
+      1
+    ]
+	},
+	"class": "other",
+	"capabilities": [
+    "onoff",
+		"measure_battery"
+  ],
+	"images": {
+		"large": "{{driverAssetsPath}}/images/large.png",
+		"small": "{{driverAssetsPath}}/images/small.png"
+	}
+}
