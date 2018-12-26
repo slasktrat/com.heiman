@@ -1,0 +1,31 @@
+{
+	"id": "HS1SA-Z",
+	"name": {
+		"en": "Smart Smoke Sensor",
+		"nl": "Rookmelder"
+	},
+	"zwave": {
+		"manufacturerId": 608,
+		"productTypeId": 32770,
+		"productId": [
+      4096
+    ],
+		"learnmode": {
+			"instruction": {
+				"en": "Press the reset button three times within 1.5 seconds. The led flashes green."
+			}
+		},
+		"associationGroups": [
+      1
+    ]
+	},
+	"class": "sensor",
+	"capabilities": [
+    "alarm_smoke",
+    "measure_battery"
+  ],
+	"images": {
+		"large": "{{driverAssetsPath}}/images/large.png",
+		"small": "{{driverAssetsPath}}/images/small.png"
+	}
+}

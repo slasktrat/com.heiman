@@ -1,12 +1,25 @@
 {
   "id": "com.heiman",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "compatibility": ">=1.5.0",
   "author": {
     "name": "Espen Ljosland",
     "email": "espen@ljosland.com"
   },
+  "contributors": {
+    "developers": [
+      {
+        "name": "Ted Tolboom",
+        "email": "dTNL.Homey@gmail.com"
+      },
+      {
+        "name": "Espen Ljosland",
+        "email": "espen@ljosland.com"
+      }
+    ]
+  },
   "sdk": 2,
+  "brandColor": "#f99c00",
   "name": {
     "en": "Heiman"
   },
@@ -54,6 +67,88 @@
       }
     },
     {
+      "id": "HS1HT-Z",
+      "name": {
+        "en": "Smart Temperature and Humidity Sensor"
+      },
+      "zwave": {
+        "manufacturerId": 608,
+        "productTypeId": 32775,
+        "productId": [
+          4096
+        ],
+        "learnmode": {
+          "instruction": {
+            "en": "Press the reset button three times within 1.5 seconds. The led flashes green."
+          }
+        },
+        "associationGroups": [
+          1
+        ]
+      },
+      "class": "sensor",
+      "capabilities": [
+        "measure_humidity",
+        "measure_temperature",
+        "measure_battery"
+      ],
+      "images": {
+        "large": "/drivers/HS1HT-Z/assets/images/large.png",
+        "small": "/drivers/HS1HT-Z/assets/images/small.png"
+      }
+    },
+    {
+      "id": "HS1MS-Z",
+      "name": {
+        "en": "Smart Motion Sensor"
+      },
+      "zwave": {
+        "manufacturerId": 608,
+        "productTypeId": 32769,
+        "productId": [
+          4096
+        ],
+        "productDocumentation": "https://products.z-wavealliance.org/ProductManual/File?folder=&filename=Manuals/1801/HSIMS-Z.pdf",
+        "pid": 1801,
+        "imageRemotePath": "https://products.z-wavealliance.org/ProductImages/Index?productName=ZC10-16055092",
+        "learnmode": {
+          "instruction": {
+            "en": "Press the reset button three times within 1.5 seconds. The led flashes green."
+          }
+        },
+        "associationGroups": [
+          1
+        ],
+        "associationGroupsOptions": {
+          "1": {
+            "hint": {
+              "en": "Lifeline. All run-time reporting is addressed to this group. Only one node can be assigned to this association group. \nDefault: 1 (Homey's ID)"
+            }
+          },
+          "2": {
+            "hint": {
+              "en": ":Lifeline association group (report to other devices): Include command classes: Battery report, Notification report, and Device Reset Locally notification, Binary report."
+            }
+          },
+          "3": {
+            "hint": {
+              "en": ":Binary Sensor Command Class:Compatible with 300 series."
+            }
+          }
+        }
+      },
+      "class": "sensor",
+      "capabilities": [
+        "measure_battery",
+        "alarm_motion",
+        "alarm_tamper"
+      ],
+      "images": {
+        "large": "/drivers/HS1MS-Z/assets/images/large.png",
+        "small": "/drivers/HS1MS-Z/assets/images/small.png"
+      }
+    },
+    {
       "id": "HS1SA-Z",
       "name": {
         "en": "Smart Smoke Sensor",
@@ -85,34 +180,119 @@
       }
     },
     {
-      "id": "HS1HT-Z",
+      "id": "HS2SK-Z",
       "name": {
-        "en": "Smart Temperature and Humidity Sensor"
+        "en": "Smart Plug"
       },
       "zwave": {
         "manufacturerId": 608,
-        "productTypeId": 32775,
+        "productTypeId": 32776,
         "productId": [
           4096
         ],
+        "productDocumentation": "https://products.z-wavealliance.org/ProductManual/File?folder=&filename=Manuals/2315/HS2SK-Z%20documentation.doc",
+        "pid": 2315,
+        "imageRemotePath": "https://products.z-wavealliance.org/ProductImages/Index?productName=ZC10-17055579",
         "learnmode": {
+          "image": "/drivers/HS2SK-Z/assets/learnmode.svg",
           "instruction": {
-            "en": "Press the reset button three times within 1.5 seconds. The led flashes green."
+            "en": "Press the Switch Button 3 times within 1.5s, Green LED is Blinking 3 times within 1 second.\nIf add Process is successful, Green LED will turn off."
+          }
+        },
+        "associationGroups": [
+          1
+        ],
+        "associationGroupsOptions": {
+          "1": {
+            "hint": {
+              "en": "Lifeline. All run-time reporting is addressed to this group. Only one node can be assigned to this association group. \nDefault: 1 (Homey's ID)"
+            }
+          }
+        }
+      },
+      "class": "socket",
+      "capabilities": [
+        "onoff"
+      ],
+      "images": {
+        "large": "/drivers/HS2SK-Z/assets/images/large.png",
+        "small": "/drivers/HS2SK-Z/assets/images/small.png"
+      }
+    },
+    {
+      "id": "HS2SKm-Z",
+      "name": {
+        "en": "Smart Metering Plug"
+      },
+      "zwave": {
+        "manufacturerId": 608,
+        "productTypeId": 32774,
+        "productId": [
+          4096
+        ],
+        "productDocumentation": "https://products.z-wavealliance.org/ProductManual/File?folder=&filename=Manuals/1941/HS2SK-Z%20documentation.doc",
+        "pid": 1941,
+        "imageRemotePath": "https://products.z-wavealliance.org/ProductImages/Index?productName=ZC10-17055579",
+        "learnmode": {
+          "image": "/drivers/HS2SKm-Z/assets/learnmode.svg",
+          "instruction": {
+            "en": "Press the Switch Button 3 times within 1.5s, Green LED is Blinking 3 times within 1 second.\nIf add Process is successful, Green LED will turn off."
+          }
+        },
+        "associationGroups": [
+          1
+        ],
+        "associationGroupsOptions": {
+          "1": {
+            "hint": {
+              "en": "Lifeline. All run-time reporting is addressed to this group. Only one node can be assigned to this association group. \nDefault: 1 (Homey's ID)"
+            }
+          }
+        }
+      },
+      "class": "socket",
+      "capabilities": [
+        "onoff",
+        "measure_power",
+        "meter_power"
+      ],
+      "images": {
+        "large": "/drivers/HS2SKm-Z/assets/images/large.png",
+        "small": "/drivers/HS2SKm-Z/assets/images/small.png"
+      }
+    },
+    {
+      "id": "HS2WD-Z",
+      "name": {
+        "en": "Smart Sound and Flash Siren"
+      },
+      "zwave": {
+        "manufacturerId": 608,
+        "productTypeId": 32777,
+        "productId": [
+          4096
+        ],
+        "productDocumentation": "https://products.z-wavealliance.org/ProductManual/File?folder=&filename=Manuals/2951/SmartSirenDocumentation.pdf",
+        "pid": 2951,
+        "imageRemotePath": "https://products.z-wavealliance.org/ProductImages/Index?productName=ZC10-18066158",
+        "learnmode": {
+          "image": "/drivers/HS2WD-Z/assets/learnmode.svg",
+          "instruction": {
+            "en": "Press the Switch Button 3 times within 1.5s, Green LED is Blinking 3 times within 1 second.\nIf add Process is successful, Green LED will turn off."
           }
         },
         "associationGroups": [
           1
         ]
       },
-      "class": "sensor",
+      "class": "other",
       "capabilities": [
-        "measure_humidity",
-        "measure_temperature",
+        "onoff",
         "measure_battery"
       ],
       "images": {
-        "large": "/drivers/HS1HT-Z/assets/images/large.png",
-        "small": "/drivers/HS1HT-Z/assets/images/small.png"
+        "large": "/drivers/HS2WD-Z/assets/images/large.png",
+        "small": "/drivers/HS2WD-Z/assets/images/small.png"
       }
     }
   ]

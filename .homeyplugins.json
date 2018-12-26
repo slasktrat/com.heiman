@@ -1,5 +1,8 @@
 [
-  {
-    "id": "zwave"
+	{
+		"id": "zwave"
+  },
+	{
+		"id": "compose"
   }
 ]

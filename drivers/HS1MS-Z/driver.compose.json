@@ -1,0 +1,51 @@
+{
+	"id": "HS1MS-Z",
+	"name": {
+		"en": "Smart Motion Sensor"
+	},
+	"zwave": {
+		"manufacturerId": 608,
+		"productTypeId": 32769,
+		"productId": [
+      4096
+    ],
+		"productDocumentation": "https://products.z-wavealliance.org/ProductManual/File?folder=&filename=Manuals/1801/HSIMS-Z.pdf",
+		"pid": 1801,
+		"imageRemotePath": "https://products.z-wavealliance.org/ProductImages/Index?productName=ZC10-16055092",
+		"learnmode": {
+			"instruction": {
+				"en": "Press the reset button three times within 1.5 seconds. The led flashes green."
+			}
+		},
+		"associationGroups": [
+      1
+    ],
+		"associationGroupsOptions": {
+			"1": {
+				"hint": {
+					"en": "Lifeline. All run-time reporting is addressed to this group. Only one node can be assigned to this association group. \nDefault: 1 (Homey's ID)"
+				}
+			},
+			"2": {
+				"hint": {
+					"en": ":Lifeline association group (report to other devices): Include command classes: Battery report, Notification report, and Device Reset Locally notification, Binary report."
+				}
+			},
+			"3": {
+				"hint": {
+					"en": ":Binary Sensor Command Class:Compatible with 300 series."
+				}
+			}
+		}
+	},
+	"class": "sensor",
+	"capabilities": [
+		"measure_battery",
+    "alarm_motion",
+    "alarm_tamper"
+  ],
+	"images": {
+		"large": "{{driverAssetsPath}}/images/large.png",
+		"small": "{{driverAssetsPath}}/images/small.png"
+	}
+}

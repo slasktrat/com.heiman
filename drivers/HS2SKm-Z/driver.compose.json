@@ -1,0 +1,42 @@
+{
+	"id": "HS2SKm-Z",
+	"name": {
+		"en": "Smart Metering Plug"
+	},
+	"zwave": {
+		"manufacturerId": 608,
+		"productTypeId": 32774,
+		"productId": [
+      4096
+    ],
+		"productDocumentation": "https://products.z-wavealliance.org/ProductManual/File?folder=&filename=Manuals/1941/HS2SK-Z%20documentation.doc",
+		"pid": 1941,
+		"imageRemotePath": "https://products.z-wavealliance.org/ProductImages/Index?productName=ZC10-17055579",
+		"learnmode": {
+			"image": "{{driverAssetsPath}}/learnmode.svg",
+			"instruction": {
+				"en": "Press the Switch Button 3 times within 1.5s, Green LED is Blinking 3 times within 1 second.\nIf add Process is successful, Green LED will turn off."
+			}
+		},
+		"associationGroups": [
+      1
+    ],
+		"associationGroupsOptions": {
+			"1": {
+				"hint": {
+					"en": "Lifeline. All run-time reporting is addressed to this group. Only one node can be assigned to this association group. \nDefault: 1 (Homey's ID)"
+				}
+			}
+		}
+	},
+	"class": "socket",
+	"capabilities": [
+		"onoff",
+		"measure_power",
+		"meter_power"
+	],
+	"images": {
+		"large": "{{driverAssetsPath}}/images/large.png",
+		"small": "{{driverAssetsPath}}/images/small.png"
+	}
+}
