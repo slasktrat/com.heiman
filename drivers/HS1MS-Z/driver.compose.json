@@ -2,6 +2,7 @@
 	"id": "HS1MS-Z",
 	"name": {
 		"en": "Smart Motion Sensor"
+		"de": "Smart Bewegungsmelder"
 	},
 	"zwave": {
 		"manufacturerId": 608,
@@ -14,7 +15,8 @@
 		"imageRemotePath": "https://products.z-wavealliance.org/ProductImages/Index?productName=ZC10-16055092",
 		"learnmode": {
 			"instruction": {
-				"en": "Press the reset button three times within 1.5 seconds. The led flashes green."
+				"en": "Press the reset button three times within 1.5 seconds. The led flashes green.",
+				"de": "Drücke die Reset-Taste innerhalb von 1,5 Sekunden dreimal. Die LED blinkt grün."
 			}
 		},
 		"associationGroups": [
@@ -23,17 +25,20 @@
 		"associationGroupsOptions": {
 			"1": {
 				"hint": {
-					"en": "Lifeline. All run-time reporting is addressed to this group. Only one node can be assigned to this association group. \nDefault: 1 (Homey's ID)"
+					"en": "Lifeline. All run-time reporting is addressed to this group. Only one node can be assigned to this association group. \nDefault: 1 (Homey's ID)",
+					"de": "Lifeline. Alle Laufzeitberichte sind an diese Gruppe gerichtet. Dieser Assoziationsgruppe kann nur ein Node zugeordnet werden. \nStandard: 1 (Homey's ID)"
 				}
 			},
 			"2": {
 				"hint": {
-					"en": ":Lifeline association group (report to other devices): Include command classes: Battery report, Notification report, and Device Reset Locally notification, Binary report."
+					"en": ":Lifeline association group (report to other devices): Include command classes: Battery report, Notification report, and Device Reset Locally notification, Binary report.",
+					"de": ":Lifeline Assoziations Gruppe (Bericht an andere Geräte): Bindet die Befehlsklassen ein: Battery report, Notification report, Device Reset Locally notification, Binary report."
 				}
 			},
 			"3": {
 				"hint": {
-					"en": ":Binary Sensor Command Class:Compatible with 300 series."
+					"en": ":Binary Sensor Command Class:Compatible with 300 series.",
+					"de": ":Binary Sensor Command Class:Kompatibel mit der 300er Serie."
 				}
 			}
 		}
