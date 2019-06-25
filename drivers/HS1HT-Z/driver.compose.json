@@ -1,7 +1,8 @@
 {
 	"id": "HS1HT-Z",
 	"name": {
-		"en": "Smart Temperature and Humidity Sensor"
+		"en": "Smart Temperature and Humidity Sensor",
+		"de": "Smart Temperatur und Luftfeuchtigkeit Sensor";
 	},
 	"zwave": {
 		"manufacturerId": 608,
@@ -11,7 +12,8 @@
     ],
 		"learnmode": {
 			"instruction": {
-				"en": "Press the reset button three times within 1.5 seconds. The led flashes green."
+				"en": "Press the reset button three times within 1.5 seconds. The led flashes green.",
+				"de": "Drücke die Reset-Taste innerhalb von 1,5 Sekunden dreimal. Die LED blinkt grün."
 			}
 		},
 		"associationGroups": [
