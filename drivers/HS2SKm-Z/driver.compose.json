@@ -1,7 +1,8 @@
 {
 	"id": "HS2SKm-Z",
 	"name": {
-		"en": "Smart Metering Plug"
+		"en": "Smart Metering Plug",
+		"de": "Smart Mess-Steckdose"
 	},
 	"zwave": {
 		"manufacturerId": 608,
@@ -15,7 +16,8 @@
 		"learnmode": {
 			"image": "{{driverAssetsPath}}/learnmode.svg",
 			"instruction": {
-				"en": "Press the Switch Button 3 times within 1.5s, Green LED is Blinking 3 times within 1 second.\nIf add Process is successful, Green LED will turn off."
+				"en": "Press the Switch Button 3 times within 1.5s, Green LED is Blinking 3 times within 1 second.\nIf add Process is successful, Green LED will turn off.",
+				"de": "Drücke die Schalter-Taste dreimal innerhalb von 1,5 Sekunden, die grüne LED blinkt dreimal innerhalb von 1 Sekunde. Wenn der Vorgang erfolgreich war, erlischt die grüne LED."
 			}
 		},
 		"associationGroups": [
@@ -24,7 +26,8 @@
 		"associationGroupsOptions": {
 			"1": {
 				"hint": {
-					"en": "Lifeline. All run-time reporting is addressed to this group. Only one node can be assigned to this association group. \nDefault: 1 (Homey's ID)"
+					"en": "Lifeline. All run-time reporting is addressed to this group. Only one node can be assigned to this association group. \nDefault: 1 (Homey's ID)",
+					"de": "Lifeline. Alle Laufzeitberichte sind an diese Gruppe gerichtet. Dieser Assoziationsgruppe kann nur ein Node zugeordnet werden. \nStandard: 1 (Homey's ID)"
 				}
 			}
 		}
