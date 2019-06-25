@@ -2,7 +2,7 @@
 	"id": "HS1HT-Z",
 	"name": {
 		"en": "Smart Temperature and Humidity Sensor",
-		"de": "Smart Temperatur und Luftfeuchtigkeit Sensor";
+		"de": "Smart Temperatur und Luftfeuchtigkeit Sensor"
 	},
 	"zwave": {
 		"manufacturerId": 608,
