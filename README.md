@@ -17,6 +17,11 @@ Adds support for Heiman Smart Home products (Z-wave series)
 &nbsp;
 #### Release notes
 
+**1.0.4**
+- Added German
+- Update Meshdriver
+- Added support for *Abus Smart Smoke Sensor* which is a rebranded HS1SA-Z - Smart Smoke Sensor
+
 **1.0.3**
 - Description update 
 
