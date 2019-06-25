@@ -1,7 +1,7 @@
 {
 	"id": "HS1MS-Z",
 	"name": {
-		"en": "Smart Motion Sensor"
+		"en": "Smart Motion Sensor",
 		"de": "Smart Bewegungsmelder"
 	},
 	"zwave": {
