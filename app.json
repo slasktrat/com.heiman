@@ -1,6 +1,6 @@
 {
   "id": "com.heiman",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "compatibility": ">=1.5.0",
   "author": {
     "name": "Espen Ljosland",
@@ -39,7 +39,8 @@
     {
       "id": "HS1CA-Z",
       "name": {
-        "en": "Smart Carbon Monoxide Sensor"
+        "en": "Smart Carbon Monoxide Sensor",
+		"de": "Smart Kohlenmonoxid-Melder"
       },
       "zwave": {
         "manufacturerId": 608,
@@ -49,7 +50,8 @@
         ],
         "learnmode": {
           "instruction": {
-            "en": "Press the reset button three times within 1.5 seconds. The led flashes green."
+            "en": "Press the reset button three times within 1.5 seconds. The led flashes green.",
+            "de": "Drücke die Reset-Taste innerhalb von 1,5 Sekunden dreimal. Die LED blinkt grün."
           }
         },
         "associationGroups": [
@@ -69,7 +71,8 @@
     {
       "id": "HS1HT-Z",
       "name": {
-        "en": "Smart Temperature and Humidity Sensor"
+        "en": "Smart Temperature and Humidity Sensor",
+		"de": "Smart Temperatur und Luftfeuchtigkeit Sensor"
       },
       "zwave": {
         "manufacturerId": 608,
@@ -79,7 +82,8 @@
         ],
         "learnmode": {
           "instruction": {
-            "en": "Press the reset button three times within 1.5 seconds. The led flashes green."
+            "en": "Press the reset button three times within 1.5 seconds. The led flashes green.",
+			"de": "Drücke die Reset-Taste innerhalb von 1,5 Sekunden dreimal. Die LED blinkt grün."
           }
         },
         "associationGroups": [
@@ -100,7 +104,8 @@
     {
       "id": "HS1MS-Z",
       "name": {
-        "en": "Smart Motion Sensor"
+        "en": "Smart Motion Sensor",
+		"de": "Smart Bewegungsmelder"
       },
       "zwave": {
         "manufacturerId": 608,
@@ -113,7 +118,8 @@
         "imageRemotePath": "https://products.z-wavealliance.org/ProductImages/Index?productName=ZC10-16055092",
         "learnmode": {
           "instruction": {
-            "en": "Press the reset button three times within 1.5 seconds. The led flashes green."
+            "en": "Press the reset button three times within 1.5 seconds. The led flashes green.",
+			"de": "Drücke die Reset-Taste innerhalb von 1,5 Sekunden dreimal. Die LED blinkt grün."
           }
         },
         "associationGroups": [
@@ -122,17 +128,20 @@
         "associationGroupsOptions": {
           "1": {
             "hint": {
-              "en": "Lifeline. All run-time reporting is addressed to this group. Only one node can be assigned to this association group. \nDefault: 1 (Homey's ID)"
+              "en": "Lifeline. All run-time reporting is addressed to this group. Only one node can be assigned to this association group. \nDefault: 1 (Homey's ID)",
+			  "de": "Lifeline. Alle Laufzeitberichte sind an diese Gruppe gerichtet. Dieser Assoziationsgruppe kann nur ein Node zugeordnet werden. \nStandard: 1 (Homey's ID)"
             }
           },
           "2": {
             "hint": {
-              "en": ":Lifeline association group (report to other devices): Include command classes: Battery report, Notification report, and Device Reset Locally notification, Binary report."
+              "en": ":Lifeline association group (report to other devices): Include command classes: Battery report, Notification report, and Device Reset Locally notification, Binary report.",
+			  "de": ":Lifeline Assoziations Gruppe (Bericht an andere Geräte): Bindet die Befehlsklassen ein: Battery report, Notification report, Device Reset Locally notification, Binary report."
             }
           },
           "3": {
             "hint": {
-              "en": ":Binary Sensor Command Class:Compatible with 300 series."
+              "en": ":Binary Sensor Command Class:Compatible with 300 series.",
+			  "de": ":Binary Sensor Command Class:Kompatibel mit der 300er Serie."
             }
           }
         }
@@ -152,17 +161,26 @@
       "id": "HS1SA-Z",
       "name": {
         "en": "Smart Smoke Sensor",
-        "nl": "Rookmelder"
+        "nl": "Rookmelder",
+		"de": "Smart Rauchmelder"
       },
       "zwave": {
-        "manufacturerId": 608,
-        "productTypeId": 32770,
+        "manufacturerId": [
+          608,
+		  1024
+        ],
+        "productTypeId": [
+          32770,
+		  2
+        ],
         "productId": [
-          4096
+          4096,
+		  3
         ],
         "learnmode": {
           "instruction": {
-            "en": "Press the reset button three times within 1.5 seconds. The led flashes green."
+            "en": "Press the reset button three times within 1.5 seconds. The led flashes green.",
+			"de": "Drücke die Reset-Taste innerhalb von 1,5 Sekunden dreimal. Die LED blinkt grün."
           }
         },
         "associationGroups": [
@@ -182,7 +200,8 @@
     {
       "id": "HS2SK-Z",
       "name": {
-        "en": "Smart Plug"
+        "en": "Smart Plug",
+		"de": "Smart Steckdose"
       },
       "zwave": {
         "manufacturerId": 608,
@@ -196,7 +215,8 @@
         "learnmode": {
           "image": "/drivers/HS2SK-Z/assets/learnmode.svg",
           "instruction": {
-            "en": "Press the Switch Button 3 times within 1.5s, Green LED is Blinking 3 times within 1 second.\nIf add Process is successful, Green LED will turn off."
+            "en": "Press the Switch Button 3 times within 1.5s, Green LED is Blinking 3 times within 1 second.\nIf add Process is successful, Green LED will turn off.",
+			"de": "Drücke die Schalter-Taste dreimal innerhalb von 1,5 Sekunden, die grüne LED blinkt dreimal innerhalb von 1 Sekunde. Wenn der Vorgang erfolgreich war, erlischt die grüne LED."
           }
         },
         "associationGroups": [
@@ -205,7 +225,8 @@
         "associationGroupsOptions": {
           "1": {
             "hint": {
-              "en": "Lifeline. All run-time reporting is addressed to this group. Only one node can be assigned to this association group. \nDefault: 1 (Homey's ID)"
+              "en": "Lifeline. All run-time reporting is addressed to this group. Only one node can be assigned to this association group. \nDefault: 1 (Homey's ID)",
+			  "de": "Lifeline. Alle Laufzeitberichte sind an diese Gruppe gerichtet. Dieser Assoziationsgruppe kann nur ein Node zugeordnet werden. \nStandard: 1 (Homey's ID)"
             }
           }
         }
@@ -222,7 +243,8 @@
     {
       "id": "HS2SKm-Z",
       "name": {
-        "en": "Smart Metering Plug"
+        "en": "Smart Metering Plug",
+		"de": "Smart Mess-Steckdose"
       },
       "zwave": {
         "manufacturerId": 608,
@@ -236,7 +258,8 @@
         "learnmode": {
           "image": "/drivers/HS2SKm-Z/assets/learnmode.svg",
           "instruction": {
-            "en": "Press the Switch Button 3 times within 1.5s, Green LED is Blinking 3 times within 1 second.\nIf add Process is successful, Green LED will turn off."
+            "en": "Press the Switch Button 3 times within 1.5s, Green LED is Blinking 3 times within 1 second.\nIf add Process is successful, Green LED will turn off.",
+			"de": "Drücke die Schalter-Taste dreimal innerhalb von 1,5 Sekunden, die grüne LED blinkt dreimal innerhalb von 1 Sekunde. Wenn der Vorgang erfolgreich war, erlischt die grüne LED."
           }
         },
         "associationGroups": [
@@ -245,7 +268,8 @@
         "associationGroupsOptions": {
           "1": {
             "hint": {
-              "en": "Lifeline. All run-time reporting is addressed to this group. Only one node can be assigned to this association group. \nDefault: 1 (Homey's ID)"
+              "en": "Lifeline. All run-time reporting is addressed to this group. Only one node can be assigned to this association group. \nDefault: 1 (Homey's ID)",
+			  "de": "Lifeline. Alle Laufzeitberichte sind an diese Gruppe gerichtet. Dieser Assoziationsgruppe kann nur ein Node zugeordnet werden. \nStandard: 1 (Homey's ID)"
             }
           }
         }
@@ -264,7 +288,8 @@
     {
       "id": "HS2WD-Z",
       "name": {
-        "en": "Smart Sound and Flash Siren"
+        "en": "Smart Sound and Flash Siren",
+		"de": "Smart Innensirene"
       },
       "zwave": {
         "manufacturerId": 608,
@@ -278,7 +303,8 @@
         "learnmode": {
           "image": "/drivers/HS2WD-Z/assets/learnmode.svg",
           "instruction": {
-            "en": "Press the Switch Button 3 times within 1.5s, Green LED is Blinking 3 times within 1 second.\nIf add Process is successful, Green LED will turn off."
+            "en": "Press the Switch Button 3 times within 1.5s, Green LED is Blinking 3 times within 1 second.\nIf add Process is successful, Green LED will turn off.",
+			"de": "Drücke die Schalter-Taste dreimal innerhalb von 1,5 Sekunden, die grüne LED blinkt dreimal innerhalb von 1 Sekunde. Wenn der Vorgang erfolgreich war, erlischt die grüne LED."
           }
         },
         "associationGroups": [
