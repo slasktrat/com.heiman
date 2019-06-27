@@ -1,6 +1,6 @@
 {
   "id": "com.heiman",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "compatibility": ">=1.5.0",
   "author": {
     "name": "Espen Ljosland",
@@ -167,7 +167,7 @@
       "zwave": {
         "manufacturerId": [
           608,
-          1024
+          1027
         ],
         "productTypeId": [
           32770,
