@@ -1,0 +1,29 @@
+{
+  "triggers": [
+    {
+      "id": "gas_alarm_trigger",
+      "title": {
+        "en": "The gas alarm went off",
+		"de": "Der Gas Alarm wurde ausgelöst"
+      }
+    },
+    {
+      "id": "gas_alarm_test",
+      "title": {
+        "en": "The test button was pressed",
+		"de": "Die Test Taste wurde gedrückt"
+      }
+    }
+  ],
+    "conditions": [
+      {
+        "id": "is_gasalarm",
+        "title": {
+          "en": "The gas alarm is{{on|off}}",
+          "de": "Der Gas Alarm ist !{{an|aus}}"
+        },
+        "args": []
+      }
+],
+  "actions": []
+}

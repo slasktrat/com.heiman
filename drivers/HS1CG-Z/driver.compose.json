@@ -1,0 +1,31 @@
+{
+	"id": "HS1CG-Z",
+	"name": {
+		"en": "Smart Combustible Gas Sensor",
+		"de": "Smart Gas-Melder"
+	},
+	"zwave": {
+		"manufacturerId": 608,
+		"productTypeId": 32771,
+		"productId": [
+      4096
+    ],
+		"learnmode": {
+			"instruction": {
+				"en": "Press the reset button three times within 1.5 seconds. The led flashes green.",
+				"de": "Drücke die Reset-Taste innerhalb von 1,5 Sekunden dreimal. Die LED blinkt grün."
+			}
+		},
+		"associationGroups": [
+      1
+    ]
+	},
+	"class": "sensor",
+"capabilities": [
+    "alarm_gas"
+  ],
+	"images": {
+		"large": "{{driverAssetsPath}}/images/large.png",
+		"small": "{{driverAssetsPath}}/images/small.png"
+	}
+}
