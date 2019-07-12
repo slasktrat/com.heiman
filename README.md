@@ -19,7 +19,7 @@ Adds support for Heiman Smart Home products (Z-wave series)
 #### Release notes
 
 **1.0.6**
--- Added support for *Smart Combustible Gas Sensor*
+- Added support for *Smart Combustible Gas Sensor*
 
 **1.0.4**
 - Added German
