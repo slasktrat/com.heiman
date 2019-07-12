@@ -1,0 +1,10 @@
+{
+      "type": "boolean",
+      "title": {
+        "en": "Gas Alarm",
+		"de": "Gas Alarm"
+      },
+      "getable": true,
+      "setable": false,
+      "icon": "/assets/alarm_CH4.svg"
+    }
