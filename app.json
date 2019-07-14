@@ -1,6 +1,6 @@
 {
   "id": "com.heiman",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "compatibility": ">=1.5.0",
   "author": {
     "name": "Espen Ljosland",
@@ -66,6 +66,37 @@
       "images": {
         "large": "/drivers/HS1CA-Z/assets/images/large.png",
         "small": "/drivers/HS1CA-Z/assets/images/small.png"
+      }
+    },
+    {
+      "id": "HS1CG-Z",
+      "name": {
+        "en": "Smart Combustible Gas Sensor",
+        "de": "Smart Gas-Melder"
+      },
+      "zwave": {
+        "manufacturerId": 608,
+        "productTypeId": 32771,
+        "productId": [
+          4096
+        ],
+        "learnmode": {
+          "instruction": {
+            "en": "Press the reset button three times within 1.5 seconds. The led flashes green.",
+            "de": "Drücke die Reset-Taste innerhalb von 1,5 Sekunden dreimal. Die LED blinkt grün."
+          }
+        },
+        "associationGroups": [
+          1
+        ]
+      },
+      "class": "sensor",
+      "capabilities": [
+        "alarm_gas"
+      ],
+      "images": {
+        "large": "/drivers/HS1CG-Z/assets/images/large.png",
+        "small": "/drivers/HS1CG-Z/assets/images/small.png"
       }
     },
     {
@@ -322,5 +353,65 @@
         "small": "/drivers/HS2WD-Z/assets/images/small.png"
       }
     }
-  ]
+  ],
+  "flow": {
+    "triggers": [
+      {
+        "id": "gas_alarm_trigger",
+        "title": {
+          "en": "The gas alarm went off",
+          "de": "Der Gas Alarm wurde ausgelöst"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=HS1CG-Z"
+          }
+        ]
+      },
+      {
+        "id": "gas_alarm_ende",
+        "title": {
+          "en": "The gas alarm is over.",
+          "de": "Der Gas Alarm ist ausgegangen"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=HS1CG-Z"
+          }
+        ]
+      }
+    ],
+    "conditions": [
+      {
+        "id": "is_gasalarm",
+        "title": {
+          "en": "The gas alarm is{{on|off}}",
+          "de": "Der Gas Alarm ist !{{an|aus}}"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=HS1CG-Z"
+          }
+        ]
+      }
+    ]
+  },
+  "capabilities": {
+    "alarm_gas": {
+      "type": "boolean",
+      "title": {
+        "en": "Gas Alarm",
+        "de": "Gas Alarm"
+      },
+      "getable": true,
+      "setable": false,
+      "icon": "/assets/alarm_CH4.svg"
+    }
+  }
 }
