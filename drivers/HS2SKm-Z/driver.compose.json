@@ -38,6 +38,11 @@
 		"measure_power",
 		"meter_power"
 	],
+	"capabilitiesOptions": {
+    "measure_power": {
+      "approximated": true
+    }
+	},
 	"images": {
 		"large": "{{driverAssetsPath}}/images/large.png",
 		"small": "{{driverAssetsPath}}/images/small.png"

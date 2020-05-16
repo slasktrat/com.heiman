@@ -34,6 +34,9 @@
     "alarm_smoke",
     "measure_battery"
   ],
+	"energy": {
+    "batteries": [ "CR123A"]
+  },
 	"images": {
 		"large": "{{driverAssetsPath}}/images/large.png",
 		"small": "{{driverAssetsPath}}/images/small.png"
