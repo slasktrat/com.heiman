@@ -1,6 +1,6 @@
 {
   "id": "com.heiman",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "compatibility": ">=1.5.0",
   "author": {
     "name": "Espen Ljosland",
@@ -35,6 +35,7 @@
     "large": "/assets/images/large.png",
     "small": "/assets/images/small.png"
   },
+  "source": "https://github.com/slasktrat/com.heiman",
   "drivers": [
     {
       "id": "HS1CA-Z",
@@ -63,6 +64,11 @@
         "alarm_co",
         "measure_battery"
       ],
+      "energy": {
+        "batteries": [
+          "CR123A"
+        ]
+      },
       "images": {
         "large": "/drivers/HS1CA-Z/assets/images/large.png",
         "small": "/drivers/HS1CA-Z/assets/images/small.png"
@@ -127,6 +133,11 @@
         "measure_temperature",
         "measure_battery"
       ],
+      "energy": {
+        "batteries": [
+          "CR2450"
+        ]
+      },
       "images": {
         "large": "/drivers/HS1HT-Z/assets/images/large.png",
         "small": "/drivers/HS1HT-Z/assets/images/small.png"
@@ -183,6 +194,11 @@
         "alarm_motion",
         "alarm_tamper"
       ],
+      "energy": {
+        "batteries": [
+          "CR2450"
+        ]
+      },
       "images": {
         "large": "/drivers/HS1MS-Z/assets/images/large.png",
         "small": "/drivers/HS1MS-Z/assets/images/small.png"
@@ -224,6 +240,11 @@
         "alarm_smoke",
         "measure_battery"
       ],
+      "energy": {
+        "batteries": [
+          "CR123A"
+        ]
+      },
       "images": {
         "large": "/drivers/HS1SA-Z/assets/images/large.png",
         "small": "/drivers/HS1SA-Z/assets/images/small.png"
@@ -312,6 +333,11 @@
         "measure_power",
         "meter_power"
       ],
+      "capabilitiesOptions": {
+        "measure_power": {
+          "approximated": true
+        }
+      },
       "images": {
         "large": "/drivers/HS2SKm-Z/assets/images/large.png",
         "small": "/drivers/HS2SKm-Z/assets/images/small.png"
