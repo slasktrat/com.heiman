@@ -12,7 +12,7 @@ class SirenDevice extends ZwaveDevice {
 		// enable debugging
 		this.enableDebug();
 
-		this.registerCapability('onoff', 'BASIC');
+		this.registerCapability('onoff', 'SWITCH_BINARY');
 
 		this.registerCapability('measure_battery', 'BATTERY');
 
