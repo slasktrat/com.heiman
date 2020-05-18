@@ -2,7 +2,6 @@
 
 Adds support for Heiman Smart Home products (Z-wave series)
 
-
 &nbsp;
 #### Currently supports the following devices
 - [HS1SA-Z - Smart Smoke Sensor](http://www.heimantech.com/product/96.html)
@@ -18,6 +17,11 @@ Adds support for Heiman Smart Home products (Z-wave series)
 &nbsp;
 #### Release notes
 
+**1.0.7**
+- Fix issue with *Smart Sound and Flash Siren* not triggering Siren
+- Add Homey energy options (battery type)
+- Update Homey-meshdriver to latest version
+
 **1.0.6**
 - Added support for *Smart Combustible Gas Sensor*
 
@@ -27,7 +31,7 @@ Adds support for Heiman Smart Home products (Z-wave series)
 - Added support for *Abus Smart Smoke Sensor* which is a rebranded HS1SA-Z - Smart Smoke Sensor
 
 **1.0.3**
-- Description update 
+- Description update
 
 **1.0.2**
 - Added support for *Smart Motion Sensor*, *Smart Metering Plug*, *Smart Plug* and *Smart Sound and Flash Siren*
