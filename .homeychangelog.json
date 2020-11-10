@@ -1,0 +1,11 @@
+{
+  "1.0.8": {
+    "en": "Fix issue with Smart Sound and Flash Siren not triggering Siren"
+  },
+  "1.0.6": {
+    "en": "Added support for Smart Combustible Gas Sensor"
+  },
+  "1.0.9": {
+    "en": "Fixed smoke alarm remains \"armed\" and motion sensor could trigger tamper alarm instead of motion alarm"
+  }
+}

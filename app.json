@@ -1,6 +1,6 @@
 {
   "id": "com.heiman",
-  "version": "1.0.7",
+  "version": "1.0.9",
   "compatibility": ">=1.5.0",
   "author": {
     "name": "Espen Ljosland",
@@ -24,7 +24,7 @@
     "en": "Heiman"
   },
   "description": {
-    "en": "Adds support for Heiman Smart Home products"
+    "en": "Adds support for Heiman Smart Home Z-wave products"
   },
   "category": [
     "security",

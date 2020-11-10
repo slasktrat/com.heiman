@@ -17,7 +17,11 @@ Adds support for Heiman Smart Home products (Z-wave series)
 &nbsp;
 #### Release notes
 
-**1.0.7**
+**1.0.9**
+- Fix smoke alarm remains "armed"
+- Update Homey-meshdriver to latest version to fix tamper alarm instead of motion alarm
+
+**1.0.8**
 - Fix issue with *Smart Sound and Flash Siren* not triggering Siren
 - Add Homey energy options (battery type)
 - Update Homey-meshdriver to latest version

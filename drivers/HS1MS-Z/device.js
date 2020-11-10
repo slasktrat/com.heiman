@@ -7,10 +7,10 @@ class MotionDevice extends ZwaveDevice {
 	async onMeshInit() {
 
 		// print the node's info to the console
-		this.printNode();
+		//this.printNode();
 
 		// enable debugging
-		this.enableDebug();
+		//this.enableDebug();
 
 		this.registerCapability('alarm_tamper', 'NOTIFICATION');
 		this.registerCapability('alarm_motion', 'NOTIFICATION');
