@@ -13,7 +13,7 @@ class SmokeSensorDevice extends ZwaveDevice {
         //this.enableDebug();
 
         this.registerCapability('measure_battery', 'BATTERY');
-        this.registerCapability('alarm_smoke', 'SENSOR_BINARY');
+        this.registerCapability('alarm_smoke', 'NOTIFICATION');
 
         // Initial value
         this.setCapabilityValue("alarm_smoke", false).catch(this.error);

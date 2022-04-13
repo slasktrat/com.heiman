@@ -7,5 +7,8 @@
   },
   "1.0.9": {
     "en": "Fixed smoke alarm remains \"armed\" and motion sensor could trigger tamper alarm instead of motion alarm"
+  },
+  "1.0.10": {
+    "en": "Fixed flow not triggering on smoke alarm"
   }
 }
